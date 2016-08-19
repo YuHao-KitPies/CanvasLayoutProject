@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CanvasLayout">
+        <!--The layout width in design diagram.-->
+        <attr name="design_width" format="integer"/>
+        <!--The layout height in design diagram.-->
+        <attr name="design_height" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CanvasLayout_Layout">
+        <!--The widget position in z-axis. A widget with larger layout_zDepth will be layout in front of another.-->
+        <attr name="layout_zDepth" format="float"/>
+        <!--The widget width in design diagram.-->
+        <attr name="layout_design_width" format="integer"/>
+        <!--The widget height in design diagram.-->
+        <attr name="layout_design_height" format="integer"/>
+        <!--The widget width's scaling mode. It will stretch with the parent or scaling in a virtual design window.-->
+        <attr name="layout_design_width_scaling_mode" format="enum" >
+            <enum name="virtual_design_mode" value="0"/>
+            <enum name="stretch_design_mode" value="1"/>
+        </attr>
+        <!--The widget height's scaling mode. It will stretch with the parent or scaling in a virtual design window.-->
+        <attr name="layout_design_height_scaling_mode" format="enum" >
+            <enum name="virtual_design_mode" value="0"/>
+            <enum name="stretch_design_mode" value="1"/>
+        </attr>
+        <!--The widget position in x-axis of the design diagram.-->
+        <attr name="layout_design_x" format="integer"/>
+        <!--The widget position in y-axis of the design diagram.-->
+        <attr name="layout_design_y" format="integer"/>
+        <!--The widget x-position's scaling mode. It will stretch with the parent or scaling in a virtual design window.-->
+        <attr name="layout_design_x_scaling_mode" format="enum" >
+            <enum name="virtual_design_mode" value="0"/>
+            <enum name="stretch_design_mode" value="1"/>
+        </attr>
+        <!--The widget y-position's scaling mode. It will stretch with the parent or scaling in a virtual design window.-->
+        <attr name="layout_design_y_scaling_mode" format="enum" >
+            <enum name="virtual_design_mode" value="0"/>
+            <enum name="stretch_design_mode" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

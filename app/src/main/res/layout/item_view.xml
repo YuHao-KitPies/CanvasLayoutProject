@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <org.kitpies.canvaslayout.widget.CanvasLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:design_width="100"
+        app:design_height="100"
+        android:background="#669999dd">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_design_width="50"
+            app:layout_design_height="50"
+            android:background="#ff556678"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_design_x="30"
+            app:layout_design_y="30"
+            app:layout_zDepth="15"
+            app:layout_design_width="50"
+            app:layout_design_height="50"
+            android:background="#ff776678"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_design_x="70"
+            app:layout_design_y="0"
+            app:layout_zDepth="25"
+            app:layout_design_width="30"
+            app:layout_design_height="30"
+            android:background="#ff779978"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_design_x="0"
+            app:layout_design_y="55"
+            app:layout_zDepth="45"
+            app:layout_design_width="45"
+            app:layout_design_height="45"
+            android:background="#ff7799dd"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_design_x="55"
+            app:layout_design_y="55"
+            app:layout_zDepth="2"
+            app:layout_design_width="35"
+            app:layout_design_height="35"
+            android:background="#ff3366ff"/>
+
+    </org.kitpies.canvaslayout.widget.CanvasLayout>
+
+</LinearLayout>

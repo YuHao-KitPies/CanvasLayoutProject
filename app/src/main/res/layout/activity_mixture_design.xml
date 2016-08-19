@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="org.kitpies.canvaslayout.VirtualDesignActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="1、Layout and sizing use virtual design mode."
+                android:textColor="#ffffffff"
+                android:background="#77000000"
+                android:gravity="center_vertical|left"/>
+
+            <org.kitpies.canvaslayout.widget.CanvasLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:design_width="300"
+                app:design_height="300"
+                android:background="#669999dd"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    android:background="#ff556678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="60"
+                    app:layout_design_y="60"
+                    app:layout_zDepth="15"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    android:background="#ff776678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="140"
+                    app:layout_design_y="0"
+                    app:layout_zDepth="25"
+                    app:layout_design_width="60"
+                    app:layout_design_height="60"
+                    android:background="#ff779978"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="0"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="45"
+                    app:layout_design_width="90"
+                    app:layout_design_height="90"
+                    android:background="#ff7799dd"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="110"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="2"
+                    app:layout_design_width="70"
+                    app:layout_design_height="70"
+                    android:background="#ff3366ff"/>
+
+            </org.kitpies.canvaslayout.widget.CanvasLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="2、Layout uses virtual design mode but sizing uses stretch design mode ."
+                android:textColor="#ffffffff"
+                android:background="#77000000"
+                android:gravity="center_vertical|left"/>
+
+            <org.kitpies.canvaslayout.widget.CanvasLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:design_width="300"
+                app:design_height="300"
+                android:background="#669999dd"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    android:background="#ff556678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="60"
+                    app:layout_design_y="60"
+                    app:layout_zDepth="15"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    android:background="#ff776678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="140"
+                    app:layout_design_y="0"
+                    app:layout_zDepth="25"
+                    app:layout_design_width="60"
+                    app:layout_design_height="60"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    android:background="#ff779978"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="0"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="45"
+                    app:layout_design_width="90"
+                    app:layout_design_height="90"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    android:background="#ff7799dd"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="110"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="2"
+                    app:layout_design_width="70"
+                    app:layout_design_height="70"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    android:background="#ff3366ff"/>
+
+            </org.kitpies.canvaslayout.widget.CanvasLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="3、Layout uses stretch design mode but sizing uses virtual design mode ."
+                android:textColor="#ffffffff"
+                android:background="#77000000"
+                android:gravity="center_vertical|left"/>
+
+            <org.kitpies.canvaslayout.widget.CanvasLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:design_width="300"
+                app:design_height="300"
+                android:background="#669999dd"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff556678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="60"
+                    app:layout_design_y="60"
+                    app:layout_zDepth="15"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff776678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="140"
+                    app:layout_design_y="0"
+                    app:layout_zDepth="25"
+                    app:layout_design_width="60"
+                    app:layout_design_height="60"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff779978"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="0"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="45"
+                    app:layout_design_width="90"
+                    app:layout_design_height="90"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff7799dd"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="110"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="2"
+                    app:layout_design_width="70"
+                    app:layout_design_height="70"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff3366ff"/>
+
+            </org.kitpies.canvaslayout.widget.CanvasLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="4、Layout and sizing use stretch design mode."
+                android:textColor="#ffffffff"
+                android:background="#77000000"
+                android:gravity="center_vertical|left"/>
+
+            <org.kitpies.canvaslayout.widget.CanvasLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:design_width="300"
+                app:design_height="300"
+                android:background="#669999dd"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff556678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="60"
+                    app:layout_design_y="60"
+                    app:layout_zDepth="15"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff776678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="140"
+                    app:layout_design_y="0"
+                    app:layout_zDepth="25"
+                    app:layout_design_width="60"
+                    app:layout_design_height="60"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff779978"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="0"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="45"
+                    app:layout_design_width="90"
+                    app:layout_design_height="90"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff7799dd"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="110"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="2"
+                    app:layout_design_width="70"
+                    app:layout_design_height="70"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff3366ff"/>
+
+            </org.kitpies.canvaslayout.widget.CanvasLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="5、Otherwise."
+                android:textColor="#ffffffff"
+                android:background="#77000000"
+                android:gravity="center_vertical|left"/>
+
+            <org.kitpies.canvaslayout.widget.CanvasLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:design_width="300"
+                app:design_height="300"
+                android:background="#669999dd"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff556678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="60"
+                    app:layout_design_y="60"
+                    app:layout_zDepth="15"
+                    app:layout_design_width="100"
+                    app:layout_design_height="100"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff776678"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="140"
+                    app:layout_design_y="0"
+                    app:layout_zDepth="25"
+                    app:layout_design_width="60"
+                    app:layout_design_height="60"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff779978"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="0"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="45"
+                    app:layout_design_width="90"
+                    app:layout_design_height="90"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_x_scaling_mode="stretch_design_mode"
+                    android:background="#ff7799dd"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_design_x="110"
+                    app:layout_design_y="110"
+                    app:layout_zDepth="2"
+                    app:layout_design_width="70"
+                    app:layout_design_height="70"
+                    app:layout_design_width_scaling_mode="stretch_design_mode"
+                    app:layout_design_height_scaling_mode="stretch_design_mode"
+                    app:layout_design_y_scaling_mode="stretch_design_mode"
+                    android:background="#ff3366ff"/>
+
+            </org.kitpies.canvaslayout.widget.CanvasLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

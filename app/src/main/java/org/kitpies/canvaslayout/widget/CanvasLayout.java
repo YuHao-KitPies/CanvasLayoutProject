@@ -30,7 +30,7 @@ import java.util.TreeSet;
  * <h1>Description:</h1>
  * A canvas layout for handle multiple screen size and density.<br/>
  * You can use the canvas layout in your java code or in your xml hierarchy as other layout widget.<br/>
- * It observe the principle：The size is various, but the scaling is constant.
+ * It observe the principle：The size and density is various, but the scaling is constant.
  * <h1>How does it work:</h1>
  * Let's define several term first.<br/>
  * <br/>
